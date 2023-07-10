@@ -1,0 +1,2567 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20232.23.0611.2007                               -->
+<workbook original-version='18.1' source-build='2023.2.0 (20232.23.0611.2007)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <CascadingFilters />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='FAA Wildlife Strikes (faa_data_subset)' inline='true' name='federated.1323dk3152ujmj114tk130iuqbj7' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='faa_data_subset' name='excel-direct.1f2hvi20bv9hmi17bepcv0j46tmx'>
+            <connection class='excel-direct' cleaning='yes' compat='no' dataRefreshTime='' filename='Data/Tableau Project/faa_data_subset.xlsx' interpretationMode='1' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.1f2hvi20bv9hmi17bepcv0j46tmx' name='FAA Wildlife Strikes' table='[&apos;FAA Wildlife Strikes$&apos;]' type='table'>
+          <columns gridOrigin='A1:Y10001:no:A1:Y10001:1' header='yes' lost='0' outcome='1' processed='67045'>
+            <column datatype='string' name='Airport: Code' ordinal='0' />
+            <column datatype='string' name='Airport: Name' ordinal='1' />
+            <column datatype='string' name='Origin State' ordinal='2' />
+            <column datatype='string' name='Origin State Code' ordinal='3' />
+            <column datatype='string' name='Country' ordinal='4' />
+            <column datatype='string' name='Aircraft: Type' ordinal='5' />
+            <column datatype='integer' name='Aircraft: Number of engines' ordinal='6' />
+            <column datatype='datetime' name='Collision Date and Time' ordinal='7' />
+            <column datatype='string' name='When: Time of day' ordinal='8' />
+            <column datatype='string' name='When: Phase of flight' ordinal='9' />
+            <column datatype='string' name='Effect: Amount of damage (detailed)' ordinal='10' />
+            <column datatype='string' name='Effect: Impact to flight' ordinal='11' />
+            <column datatype='string' name='Effect: Indicated Damage' ordinal='12' />
+            <column datatype='real' name='Cost: Aircraft time out of service (hours)' ordinal='13' />
+            <column datatype='integer' name='Cost: Total $' ordinal='14' />
+            <column datatype='real' name='Days' ordinal='15' />
+            <column datatype='integer' name='Feet above ground' ordinal='16' />
+            <column datatype='real' name='Miles from airport' ordinal='17' />
+            <column datatype='string' name='Wildlife: Animal Category' ordinal='18' />
+            <column datatype='string' name='Wildlife: Species Order' ordinal='19' />
+            <column datatype='string' name='Wildlife: Species Group' ordinal='20' />
+            <column datatype='string' name='Wildlife: Species' ordinal='21' />
+            <column datatype='string' name='Wildlife: Species ID' ordinal='22' />
+            <column datatype='integer' name='Number of Strikes' ordinal='23' />
+            <column datatype='integer' name='Record ID' ordinal='24' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.1f2hvi20bv9hmi17bepcv0j46tmx' name='FAA Wildlife Strikes' table='[&apos;FAA Wildlife Strikes$&apos;]' type='table'>
+          <columns gridOrigin='A1:Y10001:no:A1:Y10001:1' header='yes' lost='0' outcome='1' processed='67045'>
+            <column datatype='string' name='Airport: Code' ordinal='0' />
+            <column datatype='string' name='Airport: Name' ordinal='1' />
+            <column datatype='string' name='Origin State' ordinal='2' />
+            <column datatype='string' name='Origin State Code' ordinal='3' />
+            <column datatype='string' name='Country' ordinal='4' />
+            <column datatype='string' name='Aircraft: Type' ordinal='5' />
+            <column datatype='integer' name='Aircraft: Number of engines' ordinal='6' />
+            <column datatype='datetime' name='Collision Date and Time' ordinal='7' />
+            <column datatype='string' name='When: Time of day' ordinal='8' />
+            <column datatype='string' name='When: Phase of flight' ordinal='9' />
+            <column datatype='string' name='Effect: Amount of damage (detailed)' ordinal='10' />
+            <column datatype='string' name='Effect: Impact to flight' ordinal='11' />
+            <column datatype='string' name='Effect: Indicated Damage' ordinal='12' />
+            <column datatype='real' name='Cost: Aircraft time out of service (hours)' ordinal='13' />
+            <column datatype='integer' name='Cost: Total $' ordinal='14' />
+            <column datatype='real' name='Days' ordinal='15' />
+            <column datatype='integer' name='Feet above ground' ordinal='16' />
+            <column datatype='real' name='Miles from airport' ordinal='17' />
+            <column datatype='string' name='Wildlife: Animal Category' ordinal='18' />
+            <column datatype='string' name='Wildlife: Species Order' ordinal='19' />
+            <column datatype='string' name='Wildlife: Species Group' ordinal='20' />
+            <column datatype='string' name='Wildlife: Species' ordinal='21' />
+            <column datatype='string' name='Wildlife: Species ID' ordinal='22' />
+            <column datatype='integer' name='Number of Strikes' ordinal='23' />
+            <column datatype='integer' name='Record ID' ordinal='24' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[FAA Wildlife Strikes]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:Y10001:no:A1:Y10001:1&quot;</attribute>
+              <attribute datatype='integer' name='lost'>0</attribute>
+              <attribute datatype='integer' name='outcome'>1</attribute>
+              <attribute datatype='integer' name='processed'>67045</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Airport: Code</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Airport: Code]</local-name>
+            <parent-name>[FAA Wildlife Strikes]</parent-name>
+            <remote-alias>Airport: Code</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FAA Wildlife Strikes_8C5D505F1E684C2DA8EDE8172AA26123]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Airport: Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Airport: Name]</local-name>
+            <parent-name>[FAA Wildlife Strikes]</parent-name>
+            <remote-alias>Airport: Name</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FAA Wildlife Strikes_8C5D505F1E684C2DA8EDE8172AA26123]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Origin State</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Origin State]</local-name>
+            <parent-name>[FAA Wildlife Strikes]</parent-name>
+            <remote-alias>Origin State</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FAA Wildlife Strikes_8C5D505F1E684C2DA8EDE8172AA26123]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Origin State Code</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Origin State Code]</local-name>
+            <parent-name>[FAA Wildlife Strikes]</parent-name>
+            <remote-alias>Origin State Code</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FAA Wildlife Strikes_8C5D505F1E684C2DA8EDE8172AA26123]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Country]</local-name>
+            <parent-name>[FAA Wildlife Strikes]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FAA Wildlife Strikes_8C5D505F1E684C2DA8EDE8172AA26123]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Aircraft: Type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Aircraft: Type]</local-name>
+            <parent-name>[FAA Wildlife Strikes]</parent-name>
+            <remote-alias>Aircraft: Type</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FAA Wildlife Strikes_8C5D505F1E684C2DA8EDE8172AA26123]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Aircraft: Number of engines</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Aircraft: Number of engines]</local-name>
+            <parent-name>[FAA Wildlife Strikes]</parent-name>
+            <remote-alias>Aircraft: Number of engines</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FAA Wildlife Strikes_8C5D505F1E684C2DA8EDE8172AA26123]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Collision Date and Time</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Collision Date and Time]</local-name>
+            <parent-name>[FAA Wildlife Strikes]</parent-name>
+            <remote-alias>Collision Date and Time</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FAA Wildlife Strikes_8C5D505F1E684C2DA8EDE8172AA26123]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>When: Time of day</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[When: Time of day]</local-name>
+            <parent-name>[FAA Wildlife Strikes]</parent-name>
+            <remote-alias>When: Time of day</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FAA Wildlife Strikes_8C5D505F1E684C2DA8EDE8172AA26123]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>When: Phase of flight</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[When: Phase of flight]</local-name>
+            <parent-name>[FAA Wildlife Strikes]</parent-name>
+            <remote-alias>When: Phase of flight</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FAA Wildlife Strikes_8C5D505F1E684C2DA8EDE8172AA26123]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Effect: Amount of damage (detailed)</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Effect: Amount of damage (detailed)]</local-name>
+            <parent-name>[FAA Wildlife Strikes]</parent-name>
+            <remote-alias>Effect: Amount of damage (detailed)</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FAA Wildlife Strikes_8C5D505F1E684C2DA8EDE8172AA26123]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Effect: Impact to flight</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Effect: Impact to flight]</local-name>
+            <parent-name>[FAA Wildlife Strikes]</parent-name>
+            <remote-alias>Effect: Impact to flight</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FAA Wildlife Strikes_8C5D505F1E684C2DA8EDE8172AA26123]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Effect: Indicated Damage</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Effect: Indicated Damage]</local-name>
+            <parent-name>[FAA Wildlife Strikes]</parent-name>
+            <remote-alias>Effect: Indicated Damage</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FAA Wildlife Strikes_8C5D505F1E684C2DA8EDE8172AA26123]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cost: Aircraft time out of service (hours)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Cost: Aircraft time out of service (hours)]</local-name>
+            <parent-name>[FAA Wildlife Strikes]</parent-name>
+            <remote-alias>Cost: Aircraft time out of service (hours)</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FAA Wildlife Strikes_8C5D505F1E684C2DA8EDE8172AA26123]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cost: Total $</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Cost: Total $]</local-name>
+            <parent-name>[FAA Wildlife Strikes]</parent-name>
+            <remote-alias>Cost: Total $</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FAA Wildlife Strikes_8C5D505F1E684C2DA8EDE8172AA26123]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Days</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Days]</local-name>
+            <parent-name>[FAA Wildlife Strikes]</parent-name>
+            <remote-alias>Days</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FAA Wildlife Strikes_8C5D505F1E684C2DA8EDE8172AA26123]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Feet above ground</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Feet above ground]</local-name>
+            <parent-name>[FAA Wildlife Strikes]</parent-name>
+            <remote-alias>Feet above ground</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FAA Wildlife Strikes_8C5D505F1E684C2DA8EDE8172AA26123]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Miles from airport</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Miles from airport]</local-name>
+            <parent-name>[FAA Wildlife Strikes]</parent-name>
+            <remote-alias>Miles from airport</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FAA Wildlife Strikes_8C5D505F1E684C2DA8EDE8172AA26123]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Wildlife: Animal Category</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Wildlife: Animal Category]</local-name>
+            <parent-name>[FAA Wildlife Strikes]</parent-name>
+            <remote-alias>Wildlife: Animal Category</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FAA Wildlife Strikes_8C5D505F1E684C2DA8EDE8172AA26123]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Wildlife: Species Order</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Wildlife: Species Order]</local-name>
+            <parent-name>[FAA Wildlife Strikes]</parent-name>
+            <remote-alias>Wildlife: Species Order</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FAA Wildlife Strikes_8C5D505F1E684C2DA8EDE8172AA26123]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Wildlife: Species Group</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Wildlife: Species Group]</local-name>
+            <parent-name>[FAA Wildlife Strikes]</parent-name>
+            <remote-alias>Wildlife: Species Group</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FAA Wildlife Strikes_8C5D505F1E684C2DA8EDE8172AA26123]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Wildlife: Species</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Wildlife: Species]</local-name>
+            <parent-name>[FAA Wildlife Strikes]</parent-name>
+            <remote-alias>Wildlife: Species</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FAA Wildlife Strikes_8C5D505F1E684C2DA8EDE8172AA26123]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Wildlife: Species ID</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Wildlife: Species ID]</local-name>
+            <parent-name>[FAA Wildlife Strikes]</parent-name>
+            <remote-alias>Wildlife: Species ID</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FAA Wildlife Strikes_8C5D505F1E684C2DA8EDE8172AA26123]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Number of Strikes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Number of Strikes]</local-name>
+            <parent-name>[FAA Wildlife Strikes]</parent-name>
+            <remote-alias>Number of Strikes</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FAA Wildlife Strikes_8C5D505F1E684C2DA8EDE8172AA26123]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Record ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Record ID]</local-name>
+            <parent-name>[FAA Wildlife Strikes]</parent-name>
+            <remote-alias>Record ID</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FAA Wildlife Strikes_8C5D505F1E684C2DA8EDE8172AA26123]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='datetime' name='[Collision Date and Time]' role='dimension' type='ordinal' />
+      <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column datatype='string' name='[Origin State Code]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column datatype='string' name='[Origin State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column datatype='integer' name='[Record ID]' role='dimension' type='ordinal' />
+      <_.fcp.ObjectModelTableType.true...column caption='FAA Wildlife Strikes' datatype='table' name='[__tableau_internal_object_id__].[FAA Wildlife Strikes_8C5D505F1E684C2DA8EDE8172AA26123]' role='measure' type='quantitative' />
+      <column-instance column='[Forecast Indicator]' derivation='None' forecast-column-base='[Forecast Indicator]' forecast-column-type='forecast-indicator' name='[none:Forecast Indicator:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Collision Date and Time]' derivation='Year-Trunc' name='[tyr:Collision Date and Time:qk]' pivot='key' type='quantitative' />
+      <group caption='YEAR(Collision Date and Time) Set' name='[YEAR(Collision Date and Time) Set]' name-style='unqualified' user:ui-builder='lasso-group'>
+        <groupfilter function='member' level='[tyr:Collision Date and Time:qk]' member='#2009-01-01 00:00:00#' />
+      </group>
+      <drill-paths>
+        <drill-path name='Location'>
+          <field>[Country]</field>
+          <field>[Origin State]</field>
+          <field>[Origin State Code]</field>
+          <field>[Airport: Name]</field>
+        </drill-path>
+      </drill-paths>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+        <semantic-value key='[State].[Name]' value='%null%' />
+      </semantic-values>
+      <default-sorts>
+        <manual-sort column='[none:Forecast Indicator:nk]' direction='ASC'>
+          <dictionary>
+            <bucket>&quot;Actual&quot;</bucket>
+            <bucket>&quot;Estimate&quot;</bucket>
+          </dictionary>
+        </manual-sort>
+      </default-sorts>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='FAA Wildlife Strikes' id='FAA Wildlife Strikes_8C5D505F1E684C2DA8EDE8172AA26123'>
+            <properties context=''>
+              <relation connection='excel-direct.1f2hvi20bv9hmi17bepcv0j46tmx' name='FAA Wildlife Strikes' table='[&apos;FAA Wildlife Strikes$&apos;]' type='table'>
+                <columns gridOrigin='A1:Y10001:no:A1:Y10001:1' header='yes' lost='0' outcome='1' processed='67045'>
+                  <column datatype='string' name='Airport: Code' ordinal='0' />
+                  <column datatype='string' name='Airport: Name' ordinal='1' />
+                  <column datatype='string' name='Origin State' ordinal='2' />
+                  <column datatype='string' name='Origin State Code' ordinal='3' />
+                  <column datatype='string' name='Country' ordinal='4' />
+                  <column datatype='string' name='Aircraft: Type' ordinal='5' />
+                  <column datatype='integer' name='Aircraft: Number of engines' ordinal='6' />
+                  <column datatype='datetime' name='Collision Date and Time' ordinal='7' />
+                  <column datatype='string' name='When: Time of day' ordinal='8' />
+                  <column datatype='string' name='When: Phase of flight' ordinal='9' />
+                  <column datatype='string' name='Effect: Amount of damage (detailed)' ordinal='10' />
+                  <column datatype='string' name='Effect: Impact to flight' ordinal='11' />
+                  <column datatype='string' name='Effect: Indicated Damage' ordinal='12' />
+                  <column datatype='real' name='Cost: Aircraft time out of service (hours)' ordinal='13' />
+                  <column datatype='integer' name='Cost: Total $' ordinal='14' />
+                  <column datatype='real' name='Days' ordinal='15' />
+                  <column datatype='integer' name='Feet above ground' ordinal='16' />
+                  <column datatype='real' name='Miles from airport' ordinal='17' />
+                  <column datatype='string' name='Wildlife: Animal Category' ordinal='18' />
+                  <column datatype='string' name='Wildlife: Species Order' ordinal='19' />
+                  <column datatype='string' name='Wildlife: Species Group' ordinal='20' />
+                  <column datatype='string' name='Wildlife: Species' ordinal='21' />
+                  <column datatype='string' name='Wildlife: Species ID' ordinal='22' />
+                  <column datatype='integer' name='Number of Strikes' ordinal='23' />
+                  <column datatype='integer' name='Record ID' ordinal='24' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Average Collision cost by specieis'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Average Cost of Stike by  Species</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='FAA Wildlife Strikes (faa_data_subset)' name='federated.1323dk3152ujmj114tk130iuqbj7' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1323dk3152ujmj114tk130iuqbj7'>
+            <column datatype='datetime' name='[Collision Date and Time]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[Cost: Total $]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Effect: Amount of damage (detailed)]' role='dimension' type='nominal' />
+            <column datatype='string' name='[When: Phase of flight]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Wildlife: Species]' role='dimension' type='nominal' />
+            <column-instance column='[Cost: Total $]' derivation='Avg' name='[avg:Cost: Total $:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Effect: Amount of damage (detailed)]' derivation='None' name='[none:Effect: Amount of damage (detailed):nk]' pivot='key' type='nominal' />
+            <column-instance column='[When: Phase of flight]' derivation='None' name='[none:When: Phase of flight:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Wildlife: Species]' derivation='None' name='[none:Wildlife: Species:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Collision Date and Time]' derivation='Month-Trunc' name='[tmn:Collision Date and Time:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1323dk3152ujmj114tk130iuqbj7].[avg:Cost: Total $:qk]' included-values='in-range'>
+            <min>4000.0</min>
+          </filter>
+          <filter class='categorical' column='[federated.1323dk3152ujmj114tk130iuqbj7].[none:Effect: Amount of damage (detailed):nk]' filter-group='7'>
+            <groupfilter function='level-members' level='[none:Effect: Amount of damage (detailed):nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1323dk3152ujmj114tk130iuqbj7].[none:When: Phase of flight:nk]' filter-group='5'>
+            <groupfilter function='level-members' level='[none:When: Phase of flight:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1323dk3152ujmj114tk130iuqbj7].[none:Wildlife: Species:nk]'>
+            <groupfilter function='level-members' level='[none:Wildlife: Species:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.1323dk3152ujmj114tk130iuqbj7].[tmn:Collision Date and Time:qk]' filter-group='6' included-values='in-range'>
+            <min>#2008-01-28 00:00:00#</min>
+            <max>#2009-02-06 23:59:59#</max>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1323dk3152ujmj114tk130iuqbj7].[none:Wildlife: Species:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1323dk3152ujmj114tk130iuqbj7].[avg:Cost: Total $:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1323dk3152ujmj114tk130iuqbj7].[none:Wildlife: Species:nk]</column>
+            <column>[federated.1323dk3152ujmj114tk130iuqbj7].[none:Effect: Amount of damage (detailed):nk]</column>
+            <column>[federated.1323dk3152ujmj114tk130iuqbj7].[none:When: Phase of flight:nk]</column>
+            <column>[federated.1323dk3152ujmj114tk130iuqbj7].[tmn:Collision Date and Time:qk]</column>
+            <column>[federated.1323dk3152ujmj114tk130iuqbj7].[avg:Cost: Total $:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1323dk3152ujmj114tk130iuqbj7].[avg:Cost: Total $:qk]' scope='cols' value='Average Cost from Wildlife Strikes' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' center='500000.0' field='[federated.1323dk3152ujmj114tk130iuqbj7].[avg:Cost: Total $:qk]' palette='red_green_gold_diverging_10_0' reverse='true' type='interpolated' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1323dk3152ujmj114tk130iuqbj7].[avg:Cost: Total $:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1323dk3152ujmj114tk130iuqbj7].[none:Wildlife: Species:nk]</rows>
+        <cols>[federated.1323dk3152ujmj114tk130iuqbj7].[avg:Cost: Total $:qk]</cols>
+      </table>
+      <simple-id uuid='{3C332441-DADA-45EE-B7AC-2310BD608449}' />
+    </worksheet>
+    <worksheet name='Cost of Wildlife Strike'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontname='Tableau Book' fontsize='12'>Cost of Wildlife Strikes on Aviation Industry</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='FAA Wildlife Strikes (faa_data_subset)' name='federated.1323dk3152ujmj114tk130iuqbj7' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1323dk3152ujmj114tk130iuqbj7'>
+            <column datatype='datetime' name='[Collision Date and Time]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[Cost: Total $]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Effect: Amount of damage (detailed)]' role='dimension' type='nominal' />
+            <column datatype='string' name='[When: Phase of flight]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Wildlife: Species]' role='dimension' type='nominal' />
+            <column-instance column='[Effect: Amount of damage (detailed)]' derivation='None' name='[none:Effect: Amount of damage (detailed):nk]' pivot='key' type='nominal' />
+            <column-instance column='[When: Phase of flight]' derivation='None' name='[none:When: Phase of flight:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Wildlife: Species]' derivation='None' name='[none:Wildlife: Species:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Cost: Total $]' derivation='Sum' name='[sum:Cost: Total $:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Collision Date and Time]' derivation='Month-Trunc' name='[tmn:Collision Date and Time:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1323dk3152ujmj114tk130iuqbj7].[none:Effect: Amount of damage (detailed):nk]' filter-group='7'>
+            <groupfilter function='level-members' level='[none:Effect: Amount of damage (detailed):nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1323dk3152ujmj114tk130iuqbj7].[none:When: Phase of flight:nk]' filter-group='5'>
+            <groupfilter function='level-members' level='[none:When: Phase of flight:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1323dk3152ujmj114tk130iuqbj7].[none:Wildlife: Species:nk]'>
+            <groupfilter function='level-members' level='[none:Wildlife: Species:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.1323dk3152ujmj114tk130iuqbj7].[tmn:Collision Date and Time:qk]' filter-group='6' included-values='in-range'>
+            <min>#2008-01-28 00:00:00#</min>
+            <max>#2009-02-06 23:59:59#</max>
+          </filter>
+          <slices>
+            <column>[federated.1323dk3152ujmj114tk130iuqbj7].[tmn:Collision Date and Time:qk]</column>
+            <column>[federated.1323dk3152ujmj114tk130iuqbj7].[none:Wildlife: Species:nk]</column>
+            <column>[federated.1323dk3152ujmj114tk130iuqbj7].[none:Effect: Amount of damage (detailed):nk]</column>
+            <column>[federated.1323dk3152ujmj114tk130iuqbj7].[none:When: Phase of flight:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='height' value='61' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' center='10000000' field='[federated.1323dk3152ujmj114tk130iuqbj7].[sum:Cost: Total $:qk]' palette='red_green_gold_diverging_10_0' reverse='true' type='interpolated' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='caption'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='border-width' value='0' />
+            <format attr='border-style' value='none' />
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1323dk3152ujmj114tk130iuqbj7].[sum:Cost: Total $:qk]' />
+              <text column='[federated.1323dk3152ujmj114tk130iuqbj7].[sum:Cost: Total $:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontname='Tableau Bold' fontsize='14'><![CDATA[$<[federated.1323dk3152ujmj114tk130iuqbj7].[sum:Cost: Total $:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontsize='11'>Cost from wild life strike</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='wrap' value='on' />
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='size' value='0.53773480653762817' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{56C0CF3F-145C-4262-9DFB-ABFA5E820867}' />
+    </worksheet>
+    <worksheet name='Cost of wildlife strike overtime'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Total Cost of Wildlife Strike Overtime</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='FAA Wildlife Strikes (faa_data_subset)' name='federated.1323dk3152ujmj114tk130iuqbj7' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1323dk3152ujmj114tk130iuqbj7'>
+            <column datatype='datetime' name='[Collision Date and Time]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[Cost: Total $]' role='measure' type='quantitative' />
+            <column-instance column='[Cost: Total $]' derivation='Sum' forecast-column-base='[sum:Cost: Total $:qk]' forecast-column-type='forecast-prediction-interval-lower' name='[fPIL:sum:Cost: Total $:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Cost: Total $]' derivation='Sum' forecast-column-base='[sum:Cost: Total $:qk]' forecast-column-type='forecast-prediction-interval-upper' name='[fPIU:sum:Cost: Total $:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Cost: Total $]' derivation='Sum' forecast-column-base='[sum:Cost: Total $:qk]' forecast-column-type='forecast-value' name='[fVal:sum:Cost: Total $:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Cost: Total $]' derivation='Sum' name='[sum:Cost: Total $:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Collision Date and Time]' derivation='Year-Trunc' name='[tyr:Collision Date and Time:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1323dk3152ujmj114tk130iuqbj7].[fVal:sum:Cost: Total $:qk]' field-type='quantitative' max='70585777' min='0' range-type='fixed' scope='rows' type='space' />
+            <encoding attr='space' class='0' field='[federated.1323dk3152ujmj114tk130iuqbj7].[tyr:Collision Date and Time:qk]' field-type='quantitative' major-origin='#2008-07-01 12:00:00#' major-spacing='1.0' major-units='years' max='#2017-11-17 00:00:00#' min='#1999-02-14 00:00:00#' range-type='fixed' scope='cols' type='space' />
+            <format attr='title' class='0' field='[federated.1323dk3152ujmj114tk130iuqbj7].[tyr:Collision Date and Time:qk]' scope='cols' value='Financial Year' />
+            <format attr='height' field='[federated.1323dk3152ujmj114tk130iuqbj7].[tyr:Collision Date and Time:qk]' value='49' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='color' data-class='total' value='#000000' />
+            <format attr='text-decoration' data-class='total' value='none' />
+            <format attr='font-style' data-class='total' value='normal' />
+            <format attr='font-weight' data-class='total' value='bold' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' center='15000000' field='[federated.1323dk3152ujmj114tk130iuqbj7].[fVal:sum:Cost: Total $:qk]' palette='red_green_gold_diverging_10_0' reverse='true' type='interpolated' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-weight' value='bold' />
+            <format attr='color' value='#1b1b1b' />
+            <format attr='text-decoration' value='none' />
+            <format attr='font-size' value='8' />
+            <format attr='font-family' value='Tableau Book' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1323dk3152ujmj114tk130iuqbj7].[fVal:sum:Cost: Total $:qk]' />
+              <size column='[federated.1323dk3152ujmj114tk130iuqbj7].[fVal:sum:Cost: Total $:qk]' />
+              <text column='[federated.1323dk3152ujmj114tk130iuqbj7].[fVal:sum:Cost: Total $:qk]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='0.73563534021377563' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='line-visibility' value='on' />
+                <format attr='line-pattern-only' value='dotted' />
+                <format attr='stroke-size' value='1' />
+                <format attr='stroke-color' value='#666666b9' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1323dk3152ujmj114tk130iuqbj7].[fVal:sum:Cost: Total $:qk]</rows>
+        <cols>[federated.1323dk3152ujmj114tk130iuqbj7].[tyr:Collision Date and Time:qk]</cols>
+        <mark-labels>
+          <mark-label id='0' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1323dk3152ujmj114tk130iuqbj7].[tyr:Collision Date and Time:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1323dk3152ujmj114tk130iuqbj7].[fVal:sum:Cost: Total $:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1323dk3152ujmj114tk130iuqbj7].[tyr:Collision Date and Time:qk]</field>
+                  <field>[federated.1323dk3152ujmj114tk130iuqbj7].[fPIL:sum:Cost: Total $:qk]</field>
+                  <field>[federated.1323dk3152ujmj114tk130iuqbj7].[fPIU:sum:Cost: Total $:qk]</field>
+                  <field>[federated.1323dk3152ujmj114tk130iuqbj7].[fVal:sum:Cost: Total $:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>#2009-01-01 00:00:00#</value>
+                <value>%null%</value>
+                <value>%null%</value>
+                <value>66649202</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='1' label-state='off'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1323dk3152ujmj114tk130iuqbj7].[tyr:Collision Date and Time:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1323dk3152ujmj114tk130iuqbj7].[fVal:sum:Cost: Total $:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1323dk3152ujmj114tk130iuqbj7].[tyr:Collision Date and Time:qk]</field>
+                  <field>[federated.1323dk3152ujmj114tk130iuqbj7].[fPIL:sum:Cost: Total $:qk]</field>
+                  <field>[federated.1323dk3152ujmj114tk130iuqbj7].[fPIU:sum:Cost: Total $:qk]</field>
+                  <field>[federated.1323dk3152ujmj114tk130iuqbj7].[fVal:sum:Cost: Total $:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>#2016-01-01 00:00:00#</value>
+                <value>-9687527</value>
+                <value>47796711</value>
+                <value>19054592</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='2' label-state='off'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1323dk3152ujmj114tk130iuqbj7].[tyr:Collision Date and Time:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1323dk3152ujmj114tk130iuqbj7].[fVal:sum:Cost: Total $:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1323dk3152ujmj114tk130iuqbj7].[tyr:Collision Date and Time:qk]</field>
+                  <field>[federated.1323dk3152ujmj114tk130iuqbj7].[fPIL:sum:Cost: Total $:qk]</field>
+                  <field>[federated.1323dk3152ujmj114tk130iuqbj7].[fPIU:sum:Cost: Total $:qk]</field>
+                  <field>[federated.1323dk3152ujmj114tk130iuqbj7].[fVal:sum:Cost: Total $:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>#2015-01-01 00:00:00#</value>
+                <value>-9687527</value>
+                <value>47796711</value>
+                <value>19054592</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='3' label-state='off'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1323dk3152ujmj114tk130iuqbj7].[tyr:Collision Date and Time:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1323dk3152ujmj114tk130iuqbj7].[fVal:sum:Cost: Total $:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1323dk3152ujmj114tk130iuqbj7].[tyr:Collision Date and Time:qk]</field>
+                  <field>[federated.1323dk3152ujmj114tk130iuqbj7].[fPIL:sum:Cost: Total $:qk]</field>
+                  <field>[federated.1323dk3152ujmj114tk130iuqbj7].[fPIU:sum:Cost: Total $:qk]</field>
+                  <field>[federated.1323dk3152ujmj114tk130iuqbj7].[fVal:sum:Cost: Total $:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>#2012-01-01 00:00:00#</value>
+                <value>%null%</value>
+                <value>%null%</value>
+                <value>13046167</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='4' label-state='off'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1323dk3152ujmj114tk130iuqbj7].[tyr:Collision Date and Time:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1323dk3152ujmj114tk130iuqbj7].[fVal:sum:Cost: Total $:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1323dk3152ujmj114tk130iuqbj7].[tyr:Collision Date and Time:qk]</field>
+                  <field>[federated.1323dk3152ujmj114tk130iuqbj7].[fPIL:sum:Cost: Total $:qk]</field>
+                  <field>[federated.1323dk3152ujmj114tk130iuqbj7].[fPIU:sum:Cost: Total $:qk]</field>
+                  <field>[federated.1323dk3152ujmj114tk130iuqbj7].[fVal:sum:Cost: Total $:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>#2002-01-01 00:00:00#</value>
+                <value>%null%</value>
+                <value>%null%</value>
+                <value>20189128</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='5' label-state='off'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1323dk3152ujmj114tk130iuqbj7].[tyr:Collision Date and Time:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1323dk3152ujmj114tk130iuqbj7].[fVal:sum:Cost: Total $:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1323dk3152ujmj114tk130iuqbj7].[tyr:Collision Date and Time:qk]</field>
+                  <field>[federated.1323dk3152ujmj114tk130iuqbj7].[fPIL:sum:Cost: Total $:qk]</field>
+                  <field>[federated.1323dk3152ujmj114tk130iuqbj7].[fPIU:sum:Cost: Total $:qk]</field>
+                  <field>[federated.1323dk3152ujmj114tk130iuqbj7].[fVal:sum:Cost: Total $:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>#2004-01-01 00:00:00#</value>
+                <value>%null%</value>
+                <value>%null%</value>
+                <value>14965237</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='6' label-state='off'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1323dk3152ujmj114tk130iuqbj7].[tyr:Collision Date and Time:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1323dk3152ujmj114tk130iuqbj7].[fVal:sum:Cost: Total $:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1323dk3152ujmj114tk130iuqbj7].[tyr:Collision Date and Time:qk]</field>
+                  <field>[federated.1323dk3152ujmj114tk130iuqbj7].[fPIL:sum:Cost: Total $:qk]</field>
+                  <field>[federated.1323dk3152ujmj114tk130iuqbj7].[fPIU:sum:Cost: Total $:qk]</field>
+                  <field>[federated.1323dk3152ujmj114tk130iuqbj7].[fVal:sum:Cost: Total $:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>#2008-01-01 00:00:00#</value>
+                <value>%null%</value>
+                <value>%null%</value>
+                <value>14314884</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='7' label-state='off'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1323dk3152ujmj114tk130iuqbj7].[tyr:Collision Date and Time:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1323dk3152ujmj114tk130iuqbj7].[fVal:sum:Cost: Total $:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1323dk3152ujmj114tk130iuqbj7].[tyr:Collision Date and Time:qk]</field>
+                  <field>[federated.1323dk3152ujmj114tk130iuqbj7].[fPIL:sum:Cost: Total $:qk]</field>
+                  <field>[federated.1323dk3152ujmj114tk130iuqbj7].[fPIU:sum:Cost: Total $:qk]</field>
+                  <field>[federated.1323dk3152ujmj114tk130iuqbj7].[fVal:sum:Cost: Total $:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>#2006-01-01 00:00:00#</value>
+                <value>%null%</value>
+                <value>%null%</value>
+                <value>20434778</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+        </mark-labels>
+        <forecast-specification auto-forecast-agg='true' band-confidence-level='95.000000' enabled='true' fill-type='fill-missing' ignore-last='1' model-type='auto-season' range-type='auto' show-prediction-bands='true' />
+      </table>
+      <simple-id uuid='{748B5AEB-5EF2-412B-9734-FA3AAD2CB8DE}' />
+    </worksheet>
+    <worksheet name='Count of Wild life Strike'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Number of wildlife strikes </run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='FAA Wildlife Strikes (faa_data_subset)' name='federated.1323dk3152ujmj114tk130iuqbj7' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1323dk3152ujmj114tk130iuqbj7'>
+            <column datatype='datetime' name='[Collision Date and Time]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[Number of Strikes]' role='measure' type='quantitative' />
+            <column datatype='string' name='[When: Phase of flight]' role='dimension' type='nominal' />
+            <column-instance column='[When: Phase of flight]' derivation='None' name='[none:When: Phase of flight:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Number of Strikes]' derivation='Sum' name='[sum:Number of Strikes:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Collision Date and Time]' derivation='Month-Trunc' name='[tmn:Collision Date and Time:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1323dk3152ujmj114tk130iuqbj7].[none:When: Phase of flight:nk]' filter-group='8'>
+            <groupfilter function='member' level='[none:When: Phase of flight:nk]' member='&quot;Approach&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.1323dk3152ujmj114tk130iuqbj7].[tmn:Collision Date and Time:qk]' filter-group='3' included-values='in-range-or-null'>
+            <min>#2000-01-01 00:00:00#</min>
+            <max>#2015-05-01 00:00:00#</max>
+          </filter>
+          <slices>
+            <column>[federated.1323dk3152ujmj114tk130iuqbj7].[tmn:Collision Date and Time:qk]</column>
+            <column>[federated.1323dk3152ujmj114tk130iuqbj7].[none:When: Phase of flight:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='229' />
+            <format attr='height' value='105' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' center='1000' field='[federated.1323dk3152ujmj114tk130iuqbj7].[sum:Number of Strikes:qk]' min='500' palette='blue_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#eef1f3' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='border-width' value='1' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Text' />
+            <encodings>
+              <color column='[federated.1323dk3152ujmj114tk130iuqbj7].[sum:Number of Strikes:qk]' />
+              <text column='[federated.1323dk3152ujmj114tk130iuqbj7].[sum:Number of Strikes:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontcolor='#4e79a7' fontname='Tableau Semibold' fontsize='20'><![CDATA[<[federated.1323dk3152ujmj114tk130iuqbj7].[sum:Number of Strikes:qk]>]]></run>
+                <run fontname='Tableau Semibold' fontsize='20'>Æ </run>
+                <run>Æ&#10;</run>
+                <run fontsize='16'>wildlife strikes</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{FC137869-4865-499C-B21D-C034FD1121B1}' />
+    </worksheet>
+    <worksheet name='Economical Summary'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Total Cost of Wildlife Strikes on Aviation Industry </run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='FAA Wildlife Strikes (faa_data_subset)' name='federated.1323dk3152ujmj114tk130iuqbj7' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1323dk3152ujmj114tk130iuqbj7'>
+            <column datatype='datetime' name='[Collision Date and Time]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[Cost: Total $]' role='measure' type='quantitative' />
+            <column-instance column='[Cost: Total $]' derivation='Sum' name='[sum:Cost: Total $:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Collision Date and Time]' derivation='Month-Trunc' name='[tmn:Collision Date and Time:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1323dk3152ujmj114tk130iuqbj7].[tmn:Collision Date and Time:qk]' included-values='in-range'>
+            <min>#2000-01-01 00:00:00#</min>
+            <max>#2015-05-01 00:00:00#</max>
+          </filter>
+          <slices>
+            <column>[federated.1323dk3152ujmj114tk130iuqbj7].[tmn:Collision Date and Time:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='background-color' value='#f9eee8' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#f9f3ef' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1323dk3152ujmj114tk130iuqbj7].[sum:Cost: Total $:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontcolor='#941100' fontname='Tableau Bold' fontsize='20'><![CDATA[$<[federated.1323dk3152ujmj114tk130iuqbj7].[sum:Cost: Total $:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontsize='12'>Total Cost of Wildlife Strikes </run>
+                <run>Æ&#10;</run>
+                <run fontsize='12'>on Aviation Industry</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{15F06BB7-ABBC-41E9-8787-C85BDD066782}' />
+    </worksheet>
+    <worksheet name='Economical effect By States'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Economical Effect of WildLife Strike by States</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='FAA Wildlife Strikes (faa_data_subset)' name='federated.1323dk3152ujmj114tk130iuqbj7' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1323dk3152ujmj114tk130iuqbj7'>
+            <column datatype='datetime' name='[Collision Date and Time]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[Cost: Total $]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Origin State Code]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column datatype='string' name='[Origin State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column datatype='string' name='[When: Phase of flight]' role='dimension' type='nominal' />
+            <column-instance column='[Origin State Code]' derivation='None' name='[none:Origin State Code:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Origin State]' derivation='None' name='[none:Origin State:nk]' pivot='key' type='nominal' />
+            <column-instance column='[When: Phase of flight]' derivation='None' name='[none:When: Phase of flight:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Cost: Total $]' derivation='Sum' name='[sum:Cost: Total $:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Collision Date and Time]' derivation='Month-Trunc' name='[tmn:Collision Date and Time:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1323dk3152ujmj114tk130iuqbj7].[none:When: Phase of flight:nk]' filter-group='5'>
+            <groupfilter function='level-members' level='[none:When: Phase of flight:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.1323dk3152ujmj114tk130iuqbj7].[tmn:Collision Date and Time:qk]' filter-group='6' included-values='in-range'>
+            <min>#2008-01-28 00:00:00#</min>
+            <max>#2009-02-06 23:59:59#</max>
+          </filter>
+          <slices>
+            <column>[federated.1323dk3152ujmj114tk130iuqbj7].[tmn:Collision Date and Time:qk]</column>
+            <column>[federated.1323dk3152ujmj114tk130iuqbj7].[none:When: Phase of flight:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' center='1000000' field='[federated.1323dk3152ujmj114tk130iuqbj7].[sum:Cost: Total $:qk]' min='0' palette='red_green_gold_diverging_10_0' reverse='true' type='interpolated' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1323dk3152ujmj114tk130iuqbj7].[sum:Cost: Total $:qk]' />
+              <text column='[federated.1323dk3152ujmj114tk130iuqbj7].[none:Origin State Code:nk]' />
+              <lod column='[federated.1323dk3152ujmj114tk130iuqbj7].[none:Origin State:nk]' />
+              <geometry column='[federated.1323dk3152ujmj114tk130iuqbj7].[Geometry (generated)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1323dk3152ujmj114tk130iuqbj7].[Latitude (generated)]</rows>
+        <cols>[federated.1323dk3152ujmj114tk130iuqbj7].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{C325CD5A-81E7-405A-AE3E-D54F97E6889E}' />
+    </worksheet>
+    <worksheet name='Number Wildlife Strikes Overtime'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontsize='12'>Overview of Number of Collision Overtime</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='FAA Wildlife Strikes (faa_data_subset)' name='federated.1323dk3152ujmj114tk130iuqbj7' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1323dk3152ujmj114tk130iuqbj7'>
+            <column datatype='datetime' name='[Collision Date and Time]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[Number of Strikes]' role='measure' type='quantitative' />
+            <column-instance column='[Forecast Indicator]' derivation='Attribute' forecast-column-base='[Forecast Indicator]' forecast-column-type='forecast-indicator' name='[attr:Forecast Indicator:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Number of Strikes]' derivation='Sum' forecast-column-base='[sum:Number of Strikes:qk]' forecast-column-type='forecast-value' name='[fVal:sum:Number of Strikes:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Number of Strikes]' derivation='Sum' name='[sum:Number of Strikes:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Collision Date and Time]' derivation='Year-Trunc' name='[tyr:Collision Date and Time:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1323dk3152ujmj114tk130iuqbj7].[fVal:sum:Number of Strikes:qk]' />
+              <text column='[federated.1323dk3152ujmj114tk130iuqbj7].[fVal:sum:Number of Strikes:qk]' />
+              <lod column='[federated.1323dk3152ujmj114tk130iuqbj7].[attr:Forecast Indicator:nk]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1323dk3152ujmj114tk130iuqbj7].[fVal:sum:Number of Strikes:qk]</rows>
+        <cols>[federated.1323dk3152ujmj114tk130iuqbj7].[tyr:Collision Date and Time:qk]</cols>
+        <forecast-specification auto-forecast-agg='true' band-confidence-level='95.000000' enabled='true' fill-type='fill-missing' ignore-last='1' model-type='auto-season' range-periods='Year-Trunc' range-size='3' range-type='end-of' show-prediction-bands='true' />
+      </table>
+      <simple-id uuid='{A871EA99-0FAE-449C-BA72-55C5BD67B0BF}' />
+    </worksheet>
+    <worksheet name='Number of Strike by States'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='FAA Wildlife Strikes (faa_data_subset)' name='federated.1323dk3152ujmj114tk130iuqbj7' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1323dk3152ujmj114tk130iuqbj7'>
+            <column datatype='datetime' name='[Collision Date and Time]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[Number of Strikes]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Origin State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[Origin State]' derivation='None' name='[none:Origin State:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Number of Strikes]' derivation='Sum' name='[sum:Number of Strikes:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Collision Date and Time]' derivation='Month-Trunc' name='[tmn:Collision Date and Time:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1323dk3152ujmj114tk130iuqbj7].[none:Origin State:nk]' filter-group='4'>
+            <groupfilter function='level-members' level='[none:Origin State:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.1323dk3152ujmj114tk130iuqbj7].[tmn:Collision Date and Time:qk]' filter-group='3' included-values='in-range-or-null'>
+            <min>#2000-01-01 00:00:00#</min>
+            <max>#2015-05-01 00:00:00#</max>
+          </filter>
+          <slices>
+            <column>[federated.1323dk3152ujmj114tk130iuqbj7].[tmn:Collision Date and Time:qk]</column>
+            <column>[federated.1323dk3152ujmj114tk130iuqbj7].[none:Origin State:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1323dk3152ujmj114tk130iuqbj7].[Longitude (generated)]' field-type='quantitative' max='-7415015.3889860874' min='-14078669.072658233' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1323dk3152ujmj114tk130iuqbj7].[Latitude (generated)]' field-type='quantitative' max='7601041.2911365926' min='1087901.1507770722' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1323dk3152ujmj114tk130iuqbj7].[sum:Number of Strikes:qk]' />
+              <text column='[federated.1323dk3152ujmj114tk130iuqbj7].[none:Origin State:nk]' />
+              <text column='[federated.1323dk3152ujmj114tk130iuqbj7].[sum:Number of Strikes:qk]' />
+              <lod column='[federated.1323dk3152ujmj114tk130iuqbj7].[none:Origin State:nk]' />
+              <geometry column='[federated.1323dk3152ujmj114tk130iuqbj7].[Geometry (generated)]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run>&#10;&lt;</run>
+                <run>[federated.1323dk3152ujmj114tk130iuqbj7].[none:Origin State:nk]</run>
+                <run>&gt;&#10;&lt;</run>
+                <run>[federated.1323dk3152ujmj114tk130iuqbj7].[sum:Number of Strikes:qk]</run>
+                <run>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1323dk3152ujmj114tk130iuqbj7].[Latitude (generated)]</rows>
+        <cols>[federated.1323dk3152ujmj114tk130iuqbj7].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{BEF40B85-DFB7-4D66-A3C8-C849F50C540A}' />
+    </worksheet>
+    <worksheet name='Species and number of strike'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Wildlife Life Species  with High Count of Strikes</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='FAA Wildlife Strikes (faa_data_subset)' name='federated.1323dk3152ujmj114tk130iuqbj7' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1323dk3152ujmj114tk130iuqbj7'>
+            <column datatype='datetime' name='[Collision Date and Time]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[Number of Strikes]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Origin State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column datatype='string' name='[When: Phase of flight]' role='dimension' type='nominal' />
+            <_.fcp.ObjectModelTableType.false...column caption='FAA Wildlife Strikes' datatype='integer' name='[__tableau_internal_object_id__].[FAA Wildlife Strikes_8C5D505F1E684C2DA8EDE8172AA26123]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Wildlife: Species]' role='dimension' type='nominal' />
+            <_.fcp.ObjectModelTableType.true...column caption='FAA Wildlife Strikes' datatype='table' name='[__tableau_internal_object_id__].[FAA Wildlife Strikes_8C5D505F1E684C2DA8EDE8172AA26123]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[FAA Wildlife Strikes_8C5D505F1E684C2DA8EDE8172AA26123]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:FAA Wildlife Strikes_8C5D505F1E684C2DA8EDE8172AA26123:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Origin State]' derivation='None' name='[none:Origin State:nk]' pivot='key' type='nominal' />
+            <column-instance column='[When: Phase of flight]' derivation='None' name='[none:When: Phase of flight:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Wildlife: Species]' derivation='None' name='[none:Wildlife: Species:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Number of Strikes]' derivation='Sum' name='[sum:Number of Strikes:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Collision Date and Time]' derivation='Month-Trunc' name='[tmn:Collision Date and Time:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Collision Date and Time]' derivation='Year' name='[yr:Collision Date and Time:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1323dk3152ujmj114tk130iuqbj7].[none:Origin State:nk]' filter-group='4'>
+            <groupfilter function='level-members' level='[none:Origin State:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1323dk3152ujmj114tk130iuqbj7].[none:When: Phase of flight:nk]' filter-group='8'>
+            <groupfilter function='member' level='[none:When: Phase of flight:nk]' member='&quot;Approach&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1323dk3152ujmj114tk130iuqbj7].[none:Wildlife: Species:nk]'>
+            <groupfilter function='level-members' level='[none:Wildlife: Species:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.1323dk3152ujmj114tk130iuqbj7].[tmn:Collision Date and Time:qk]' filter-group='3' included-values='in-range-or-null'>
+            <min>#2000-01-01 00:00:00#</min>
+            <max>#2015-05-01 00:00:00#</max>
+          </filter>
+          <filter class='categorical' column='[federated.1323dk3152ujmj114tk130iuqbj7].[yr:Collision Date and Time:ok]'>
+            <groupfilter function='member' level='[yr:Collision Date and Time:ok]' member='2005' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1323dk3152ujmj114tk130iuqbj7].[none:Wildlife: Species:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1323dk3152ujmj114tk130iuqbj7].[__tableau_internal_object_id__].[cnt:FAA Wildlife Strikes_8C5D505F1E684C2DA8EDE8172AA26123:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1323dk3152ujmj114tk130iuqbj7].[none:Wildlife: Species:nk]</column>
+            <column>[federated.1323dk3152ujmj114tk130iuqbj7].[tmn:Collision Date and Time:qk]</column>
+            <column>[federated.1323dk3152ujmj114tk130iuqbj7].[yr:Collision Date and Time:ok]</column>
+            <column>[federated.1323dk3152ujmj114tk130iuqbj7].[none:Origin State:nk]</column>
+            <column>[federated.1323dk3152ujmj114tk130iuqbj7].[none:When: Phase of flight:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1323dk3152ujmj114tk130iuqbj7].[__tableau_internal_object_id__].[cnt:FAA Wildlife Strikes_8C5D505F1E684C2DA8EDE8172AA26123:qk]' palette='blue_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1323dk3152ujmj114tk130iuqbj7].[sum:Number of Strikes:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1323dk3152ujmj114tk130iuqbj7].[none:Wildlife: Species:nk]</rows>
+        <cols>[federated.1323dk3152ujmj114tk130iuqbj7].[__tableau_internal_object_id__].[cnt:FAA Wildlife Strikes_8C5D505F1E684C2DA8EDE8172AA26123:qk]</cols>
+      </table>
+      <simple-id uuid='{94E24BBE-74DD-496D-8677-B53B4A3DC173}' />
+    </worksheet>
+    <worksheet name='Total cost of wildlife strike by species'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='10'>Cost of WildLife Strikes by Species</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='FAA Wildlife Strikes (faa_data_subset)' name='federated.1323dk3152ujmj114tk130iuqbj7' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1323dk3152ujmj114tk130iuqbj7'>
+            <column datatype='datetime' name='[Collision Date and Time]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[Cost: Total $]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Effect: Amount of damage (detailed)]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Origin State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column datatype='string' name='[When: Phase of flight]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Wildlife: Species]' role='dimension' type='nominal' />
+            <column-instance column='[Effect: Amount of damage (detailed)]' derivation='None' name='[none:Effect: Amount of damage (detailed):nk]' pivot='key' type='nominal' />
+            <column-instance column='[Origin State]' derivation='None' name='[none:Origin State:nk]' pivot='key' type='nominal' />
+            <column-instance column='[When: Phase of flight]' derivation='None' name='[none:When: Phase of flight:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Wildlife: Species]' derivation='None' name='[none:Wildlife: Species:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Cost: Total $]' derivation='Sum' name='[sum:Cost: Total $:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Collision Date and Time]' derivation='Month-Trunc' name='[tmn:Collision Date and Time:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1323dk3152ujmj114tk130iuqbj7].[none:Effect: Amount of damage (detailed):nk]' filter-group='7'>
+            <groupfilter function='level-members' level='[none:Effect: Amount of damage (detailed):nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1323dk3152ujmj114tk130iuqbj7].[none:Origin State:nk]'>
+            <groupfilter function='level-members' level='[none:Origin State:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1323dk3152ujmj114tk130iuqbj7].[none:When: Phase of flight:nk]' filter-group='5'>
+            <groupfilter function='level-members' level='[none:When: Phase of flight:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1323dk3152ujmj114tk130iuqbj7].[none:Wildlife: Species:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Wildlife: Species:nk]' member='&quot;American white pelican&quot;' />
+              <groupfilter function='member' level='[none:Wildlife: Species:nk]' member='&quot;Bald eagle&quot;' />
+              <groupfilter function='member' level='[none:Wildlife: Species:nk]' member='&quot;Canada goose&quot;' />
+              <groupfilter function='member' level='[none:Wildlife: Species:nk]' member='&quot;Gulls&quot;' />
+              <groupfilter function='member' level='[none:Wildlife: Species:nk]' member='&quot;Mourning dove&quot;' />
+              <groupfilter function='member' level='[none:Wildlife: Species:nk]' member='&quot;Wapiti (elk)&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.1323dk3152ujmj114tk130iuqbj7].[tmn:Collision Date and Time:qk]' filter-group='6' included-values='in-range'>
+            <min>#2008-01-28 00:00:00#</min>
+            <max>#2009-02-06 23:59:59#</max>
+          </filter>
+          <slices>
+            <column>[federated.1323dk3152ujmj114tk130iuqbj7].[none:Wildlife: Species:nk]</column>
+            <column>[federated.1323dk3152ujmj114tk130iuqbj7].[tmn:Collision Date and Time:qk]</column>
+            <column>[federated.1323dk3152ujmj114tk130iuqbj7].[none:When: Phase of flight:nk]</column>
+            <column>[federated.1323dk3152ujmj114tk130iuqbj7].[none:Effect: Amount of damage (detailed):nk]</column>
+            <column>[federated.1323dk3152ujmj114tk130iuqbj7].[none:Origin State:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.1323dk3152ujmj114tk130iuqbj7].[sum:Cost: Total $:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+            <encoding attr='color' center='15000000' field='[federated.1323dk3152ujmj114tk130iuqbj7].[sum:Cost: Total $:qk]' palette='red_green_gold_diverging_10_0' reverse='true' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.1323dk3152ujmj114tk130iuqbj7].[sum:Cost: Total $:qk]' />
+              <text column='[federated.1323dk3152ujmj114tk130iuqbj7].[sum:Cost: Total $:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run>$&lt;</run>
+                <run>[federated.1323dk3152ujmj114tk130iuqbj7].[sum:Cost: Total $:qk]</run>
+                <run>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='has-stroke' value='false' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1323dk3152ujmj114tk130iuqbj7].[none:Wildlife: Species:nk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{12BE0BF8-FBEA-4280-8AB2-3EDB39490763}' />
+    </worksheet>
+    <worksheet name='Wildlife Strike by Month'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Number Wild Life Strikes by Month</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='FAA Wildlife Strikes (faa_data_subset)' name='federated.1323dk3152ujmj114tk130iuqbj7' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1323dk3152ujmj114tk130iuqbj7'>
+            <column datatype='datetime' name='[Collision Date and Time]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[Number of Strikes]' role='measure' type='quantitative' />
+            <column-instance column='[Collision Date and Time]' derivation='Month' name='[mn:Collision Date and Time:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Number of Strikes]' derivation='Sum' name='[sum:Number of Strikes:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Collision Date and Time]' derivation='Month-Trunc' name='[tmn:Collision Date and Time:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1323dk3152ujmj114tk130iuqbj7].[tmn:Collision Date and Time:qk]' included-values='in-range'>
+            <min>#2000-01-01 00:00:00#</min>
+            <max>#2015-05-01 00:00:00#</max>
+          </filter>
+          <slices>
+            <column>[federated.1323dk3152ujmj114tk130iuqbj7].[tmn:Collision Date and Time:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1323dk3152ujmj114tk130iuqbj7].[sum:Number of Strikes:qk]' scope='rows' value='Total Number of Strikes' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-orientation' field='[federated.1323dk3152ujmj114tk130iuqbj7].[mn:Collision Date and Time:ok]' value='-90' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1323dk3152ujmj114tk130iuqbj7].[sum:Number of Strikes:qk]' palette='blue_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1323dk3152ujmj114tk130iuqbj7].[sum:Number of Strikes:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1323dk3152ujmj114tk130iuqbj7].[sum:Number of Strikes:qk]</rows>
+        <cols>[federated.1323dk3152ujmj114tk130iuqbj7].[mn:Collision Date and Time:ok]</cols>
+      </table>
+      <simple-id uuid='{58E0C7BA-F8F6-4A17-99FB-721401FBC607}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard Wildlife Strike'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontname='Tableau Bold'>Infographic on  Number of  Wildlife Strike in United States</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style>
+        <style-rule element='dash-text'>
+          <format attr='text-align' value='center' />
+        </style-rule>
+      </style>
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <datasources>
+        <datasource caption='FAA Wildlife Strikes (faa_data_subset)' name='federated.1323dk3152ujmj114tk130iuqbj7' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1323dk3152ujmj114tk130iuqbj7'>
+        <column datatype='datetime' name='[Collision Date and Time]' role='dimension' type='ordinal' />
+        <column datatype='string' name='[Origin State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+        <column datatype='string' name='[When: Phase of flight]' role='dimension' type='nominal' />
+        <column datatype='string' name='[Wildlife: Species]' role='dimension' type='nominal' />
+        <column-instance column='[Origin State]' derivation='None' name='[none:Origin State:nk]' pivot='key' type='nominal' />
+        <column-instance column='[When: Phase of flight]' derivation='None' name='[none:When: Phase of flight:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Wildlife: Species]' derivation='None' name='[none:Wildlife: Species:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Collision Date and Time]' derivation='Month-Trunc' name='[tmn:Collision Date and Time:qk]' pivot='key' type='quantitative' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='25' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='100000' id='30' param='vert' type-v2='layout-flow' w='100000' x='0' y='0'>
+            <zone h='5125' id='31' type-v2='title' w='100000' x='0' y='0'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='94875' id='28' type-v2='layout-basic' w='100000' x='0' y='5125' />
+          </zone>
+        </zone>
+        <zone h='29875' id='23' name='Number Wildlife Strikes Overtime' w='71100' x='27700' y='6000'>
+          <layout-cache minheight='155' minwidth='152' type-h='scalable' type-w='scalable' />
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+          </zone-style>
+        </zone>
+        <zone h='26000' id='18' name='Species and number of strike' show-title='false' w='45000' x='3100' y='43250'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+          </zone-style>
+        </zone>
+        <zone h='28375' id='22' name='Wildlife Strike by Month' show-title='false' w='45200' x='3000' y='69875'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+          </zone-style>
+        </zone>
+        <zone h='7875' id='16' name='Number of Strike by States' param='[federated.1323dk3152ujmj114tk130iuqbj7].[tmn:Collision Date and Time:qk]' show-domain='false' show-null-ctrls='false' type-v2='filter' w='23400' x='3100' y='6000'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+            <format attr='background-color' value='#e6e6e681' />
+          </zone-style>
+        </zone>
+        <zone h='59875' id='21' name='Number of Strike by States' show-title='false' w='49000' x='49600' y='38500'>
+          <layout-cache minheight='201' minwidth='201' type-h='scalable' type-w='scalable' />
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+          </zone-style>
+        </zone>
+        <zone h='5250' id='20' mode='checkdropdown' name='Species and number of strike' param='[federated.1323dk3152ujmj114tk130iuqbj7].[none:Wildlife: Species:nk]' type-v2='filter' w='22500' x='3500' y='35625' />
+        <zone h='6750' id='19' mode='dropdown' name='Species and number of strike' param='[federated.1323dk3152ujmj114tk130iuqbj7].[none:Origin State:nk]' type-v2='filter' values='cascading' w='20600' x='28000' y='36375' />
+        <zone h='13750' id='24' name='Count of Wild life Strike' show-title='false' w='23600' x='2900' y='14500'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+            <format attr='background-color' value='#eef1f3' />
+          </zone-style>
+        </zone>
+        <zone h='5625' id='36' mode='dropdown' name='Species and number of strike' param='[federated.1323dk3152ujmj114tk130iuqbj7].[none:When: Phase of flight:nk]' type-v2='filter' values='database' w='22900' x='3300' y='29000' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run fontalignment='1' fontname='Tableau Bold'>Infographic on  Number of  Wildlife Strike in United States</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='1450' minheight='1450' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='62' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='61' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone h='5125' id='31' type-v2='title' w='100000' x='0' y='0'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='237' h='29875' id='23' is-fixed='true' name='Number Wildlife Strikes Overtime' w='71100' x='27700' y='6000'>
+                  <layout-cache minheight='155' minwidth='152' type-h='scalable' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='108' h='13750' id='24' is-fixed='true' name='Count of Wild life Strike' show-title='false' w='23600' x='2900' y='14500'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#eef1f3' />
+                  </zone-style>
+                </zone>
+                <zone h='7875' id='16' name='Number of Strike by States' param='[federated.1323dk3152ujmj114tk130iuqbj7].[tmn:Collision Date and Time:qk]' show-domain='false' show-null-ctrls='false' type-v2='filter' w='23400' x='3100' y='6000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#e6e6e681' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='59875' id='21' is-fixed='true' name='Number of Strike by States' show-title='false' w='49000' x='49600' y='38500'>
+                  <layout-cache minheight='201' minwidth='201' type-h='scalable' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='5250' id='20' mode='checkdropdown' name='Species and number of strike' param='[federated.1323dk3152ujmj114tk130iuqbj7].[none:Wildlife: Species:nk]' type-v2='filter' w='22500' x='3500' y='35625'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6750' id='19' mode='dropdown' name='Species and number of strike' param='[federated.1323dk3152ujmj114tk130iuqbj7].[none:Origin State:nk]' type-v2='filter' values='cascading' w='20600' x='28000' y='36375'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='5625' id='36' mode='dropdown' name='Species and number of strike' param='[federated.1323dk3152ujmj114tk130iuqbj7].[none:When: Phase of flight:nk]' type-v2='filter' values='database' w='22900' x='3300' y='29000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='206' h='26000' id='18' is-fixed='true' name='Species and number of strike' show-title='false' w='45000' x='3100' y='43250'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='225' h='28375' id='22' is-fixed='true' name='Wildlife Strike by Month' show-title='false' w='45200' x='3000' y='69875'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{FF96D17B-8A5B-4F12-828D-B117AD8CA324}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard on Economical Effect'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontname='Tableau Bold'>Economical Effect of Wildlife Strikes</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <datasources>
+        <datasource caption='FAA Wildlife Strikes (faa_data_subset)' name='federated.1323dk3152ujmj114tk130iuqbj7' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1323dk3152ujmj114tk130iuqbj7'>
+        <column datatype='datetime' name='[Collision Date and Time]' role='dimension' type='ordinal' />
+        <column datatype='string' name='[Effect: Amount of damage (detailed)]' role='dimension' type='nominal' />
+        <column datatype='string' name='[When: Phase of flight]' role='dimension' type='nominal' />
+        <column datatype='string' name='[Wildlife: Species]' role='dimension' type='nominal' />
+        <column-instance column='[Effect: Amount of damage (detailed)]' derivation='None' name='[none:Effect: Amount of damage (detailed):nk]' pivot='key' type='nominal' />
+        <column-instance column='[When: Phase of flight]' derivation='None' name='[none:When: Phase of flight:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Wildlife: Species]' derivation='None' name='[none:Wildlife: Species:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Collision Date and Time]' derivation='Month-Trunc' name='[tmn:Collision Date and Time:qk]' pivot='key' type='quantitative' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='29' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='32' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='5125' id='33' type-v2='title' w='98400' x='800' y='1000'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='92875' id='30' type-v2='layout-basic' w='98400' x='800' y='6125' />
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='36500' id='3' name='Cost of wildlife strike overtime' w='68200' x='29900' y='6375'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+          </zone-style>
+        </zone>
+        <zone h='30375' id='36' name='Average Collision cost by specieis' w='50100' x='48100' y='68375'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+          </zone-style>
+        </zone>
+        <zone h='9250' id='38' name='Cost of Wildlife Strike' show-title='false' w='21900' x='48200' y='57625'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+          </zone-style>
+        </zone>
+        <zone h='6875' id='39' mode='dropdown' name='Cost of Wildlife Strike' param='[federated.1323dk3152ujmj114tk130iuqbj7].[none:Effect: Amount of damage (detailed):nk]' type-v2='filter' w='26900' x='1100' y='35875'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+          </zone-style>
+        </zone>
+        <zone h='7875' id='40' mode='checkdropdown' name='Cost of Wildlife Strike' param='[federated.1323dk3152ujmj114tk130iuqbj7].[none:Wildlife: Species:nk]' type-v2='filter' w='21500' x='48400' y='44875'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+          </zone-style>
+        </zone>
+        <zone h='7500' id='41' name='Cost of Wildlife Strike' param='[federated.1323dk3152ujmj114tk130iuqbj7].[tmn:Collision Date and Time:qk]' show-domain='false' show-null-ctrls='false' type-v2='filter' w='27100' x='900' y='20375'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+            <format attr='background-color' value='#e6e6e684' />
+          </zone-style>
+        </zone>
+        <zone h='54250' id='44' name='Economical effect By States' show-title='false' w='46300' x='600' y='44625'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+          </zone-style>
+        </zone>
+        <zone h='13000' id='45' name='Economical Summary' show-title='false' w='27100' x='900' y='6375'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+            <format attr='background-color' value='#f9eee8' />
+          </zone-style>
+        </zone>
+        <zone h='22000' id='48' name='Total cost of wildlife strike by species' w='26700' x='71500' y='44875'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+          </zone-style>
+        </zone>
+        <zone h='6375' id='49' mode='dropdown' name='Total cost of wildlife strike by species' param='[federated.1323dk3152ujmj114tk130iuqbj7].[none:When: Phase of flight:nk]' type-v2='filter' w='26800' x='1000' y='28625'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run fontalignment='1' fontname='Tableau Bold'>Economical Effect of Wildlife Strikes</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='1550' minheight='1550' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='71' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='70' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone h='5125' id='33' type-v2='title' w='98400' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='102' h='13000' id='45' is-fixed='true' name='Economical Summary' show-title='false' w='27100' x='900' y='6375'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#f9eee8' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='36500' id='3' is-fixed='true' name='Cost of wildlife strike overtime' w='68200' x='29900' y='6375'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='54250' id='44' is-fixed='true' name='Economical effect By States' show-title='false' w='46300' x='600' y='44625'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6375' id='49' mode='dropdown' name='Total cost of wildlife strike by species' param='[federated.1323dk3152ujmj114tk130iuqbj7].[none:When: Phase of flight:nk]' type-v2='filter' w='26800' x='1000' y='28625'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='174' h='22000' id='48' is-fixed='true' name='Total cost of wildlife strike by species' w='26700' x='71500' y='44875'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6875' id='39' mode='dropdown' name='Cost of Wildlife Strike' param='[federated.1323dk3152ujmj114tk130iuqbj7].[none:Effect: Amount of damage (detailed):nk]' type-v2='filter' w='26900' x='1100' y='35875'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='7875' id='40' mode='checkdropdown' name='Cost of Wildlife Strike' param='[federated.1323dk3152ujmj114tk130iuqbj7].[none:Wildlife: Species:nk]' type-v2='filter' w='21500' x='48400' y='44875'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='7500' id='41' name='Cost of Wildlife Strike' param='[federated.1323dk3152ujmj114tk130iuqbj7].[tmn:Collision Date and Time:qk]' show-domain='false' show-null-ctrls='false' type-v2='filter' w='27100' x='900' y='20375'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#e6e6e684' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='72' h='9250' id='38' is-fixed='true' name='Cost of Wildlife Strike' show-title='false' w='21900' x='48200' y='57625'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='241' h='30375' id='36' is-fixed='true' name='Average Collision cost by specieis' w='50100' x='48100' y='68375'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{670F20EF-1A37-4BB5-98D9-8CCE68BF772C}' />
+    </dashboard>
+    <dashboard name='Story 1' type='storyboard'>
+      <style />
+      <size maxheight='964' maxwidth='1016' minheight='964' minwidth='1016' />
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98340' id='1' param='vert' removable='false' type-v2='layout-flow' w='98426' x='787' y='830'>
+            <zone h='3423' id='3' type-v2='title' w='98426' x='787' y='830' />
+            <zone h='10477' id='4' is-fixed='true' paired-zone-id='5' removable='false' type-v2='flipboard-nav' w='98426' x='787' y='4253' />
+            <zone h='84440' id='5' paired-zone-id='4' removable='false' type-v2='flipboard' w='98426' x='787' y='14730'>
+              <flipboard active-id='14' nav-type='caption' show-nav-arrows='true'>
+                <story-points>
+                  <story-point caption='Total cost spend form aviantion industry on  Wildlife Strikes in USA from 2000 to 2015.' captured-sheet='Economical Summary' id='11'>
+                    <capturedDeltas>
+                      <worksheet name='Economical Summary'>
+                        <selection-collection />
+                      </worksheet>
+                    </capturedDeltas>
+                  </story-point>
+                  <story-point caption='Total Number of strikes and condition. The phase of flight. that cost the most money from a strike is climb.' captured-sheet='Cost of Wildlife Strike' id='9'>
+                    <capturedDeltas>
+                      <worksheet name='Cost of Wildlife Strike'>
+                        <filter class='categorical' column='[federated.1323dk3152ujmj114tk130iuqbj7].[none:When: Phase of flight:nk]'>
+                          <groupfilter function='member' level='[none:When: Phase of flight:nk]' member='&quot;Climb&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+                        </filter>
+                      </worksheet>
+                    </capturedDeltas>
+                  </story-point>
+                  <story-point caption='High Cost in 2009 Fiscal spending on wildlie strike' captured-sheet='Cost of wildlife strike overtime' id='4' />
+                  <story-point caption='No corellation between number of strike and cost. Strike forcasted to continue to growth in the next 2 years.' captured-sheet='Number Wildlife Strikes Overtime' id='5' />
+                  <story-point caption='California has a highest number of strike in USA.' captured-sheet='Number of Strike by States' id='6' />
+                  <story-point caption='Phase of flight with the most number of strike is Approach.' captured-sheet='Count of Wild life Strike' id='8' />
+                  <story-point caption='August is the peak season for wildlife strikes.' captured-sheet='Wildlife Strike by Month' id='7' />
+                  <story-point caption='Most common wildlife species that cause a strike is Gull' captured-sheet='Species and number of strike' id='10'>
+                    <capturedDeltas>
+                      <worksheet name='Species and number of strike'>
+                        <filter class='categorical' column='[federated.1323dk3152ujmj114tk130iuqbj7].[none:When: Phase of flight:nk]'>
+                          <groupfilter function='level-members' level='[none:When: Phase of flight:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+                        </filter>
+                      </worksheet>
+                    </capturedDeltas>
+                  </story-point>
+                  <story-point caption='Wapiti on avarage will cause the most damage with aircraft most likely be destroyed.' captured-sheet='Average Collision cost by specieis' id='12' />
+                  <story-point caption='There are costly strikes incident in NY that causing it to has the highest cost since their total number is strike is 30 times lower than California.' captured-sheet='Economical effect By States' id='13' />
+                  <story-point caption='Canada goose strike cause $41M damage and Ball eagle cause $15 M damage that lead to the high cost in 2019.' captured-sheet='Total cost of wildlife strike by species' id='14'>
+                    <capturedDeltas>
+                      <worksheet name='Total cost of wildlife strike by species'>
+                        <filter class='quantitative' column='[federated.1323dk3152ujmj114tk130iuqbj7].[tmn:Collision Date and Time:qk]' included-values='in-range'>
+                          <min>#2008-12-04 00:00:00#</min>
+                          <max>#2009-12-13 00:00:00#</max>
+                        </filter>
+                      </worksheet>
+                    </capturedDeltas>
+                  </story-point>
+                </story-points>
+              </flipboard>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <simple-id uuid='{83C14471-49D7-47E2-BC32-8DF512D27C60}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Cost of wildlife strike overtime'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1323dk3152ujmj114tk130iuqbj7].[fVal:sum:Cost: Total $:qk]' type='color' />
+            <card pane-specification-id='0' param='[federated.1323dk3152ujmj114tk130iuqbj7].[fVal:sum:Cost: Total $:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{F8EAC1B2-E805-432C-B65E-664208A3CD4D}' />
+    </window>
+    <window class='worksheet' name='Number Wildlife Strikes Overtime'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1323dk3152ujmj114tk130iuqbj7].[fVal:sum:Number of Strikes:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{1E1CB973-3063-46B3-B0EF-FF130D4E67F1}' />
+    </window>
+    <window class='worksheet' name='Count of Wild life Strike'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='100'>
+            <card mode='dropdown' param='[federated.1323dk3152ujmj114tk130iuqbj7].[none:When: Phase of flight:nk]' type='filter' />
+            <card param='[federated.1323dk3152ujmj114tk130iuqbj7].[tmn:Collision Date and Time:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card pane-specification-id='0' param='[federated.1323dk3152ujmj114tk130iuqbj7].[sum:Number of Strikes:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{CB495F4E-E7FC-41B0-A824-0E1F53CC90F3}' />
+    </window>
+    <window class='worksheet' name='Wildlife Strike by Month'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1323dk3152ujmj114tk130iuqbj7].[tmn:Collision Date and Time:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card pane-specification-id='0' param='[federated.1323dk3152ujmj114tk130iuqbj7].[sum:Number of Strikes:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{BF84FD04-3D7A-4D94-8D0D-1B9E3A6FE71C}' />
+    </window>
+    <window class='worksheet' name='Species and number of strike'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='dropdown' param='[federated.1323dk3152ujmj114tk130iuqbj7].[none:When: Phase of flight:nk]' type='filter' />
+            <card mode='dropdown' param='[federated.1323dk3152ujmj114tk130iuqbj7].[none:Origin State:nk]' type='filter' values='cascading' />
+            <card param='[federated.1323dk3152ujmj114tk130iuqbj7].[tmn:Collision Date and Time:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card mode='checkdropdown' param='[federated.1323dk3152ujmj114tk130iuqbj7].[none:Wildlife: Species:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.1323dk3152ujmj114tk130iuqbj7].[sum:Number of Strikes:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{1AB7F4D1-32D1-41B5-BBE5-C691291CE6A3}' />
+    </window>
+    <window class='worksheet' name='Number of Strike by States'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1323dk3152ujmj114tk130iuqbj7].[tmn:Collision Date and Time:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card pane-specification-id='0' param='[federated.1323dk3152ujmj114tk130iuqbj7].[sum:Number of Strikes:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{5E0E5F36-16B9-4907-B9A3-FD2F856BE0A5}' />
+    </window>
+    <window class='worksheet' name='Economical Summary'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{37AC2BDB-1D19-4711-9330-8477D8670520}' />
+    </window>
+    <window class='worksheet' name='Cost of Wildlife Strike'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='dropdown' param='[federated.1323dk3152ujmj114tk130iuqbj7].[none:When: Phase of flight:nk]' type='filter' />
+            <card mode='checkdropdown' param='[federated.1323dk3152ujmj114tk130iuqbj7].[none:Effect: Amount of damage (detailed):nk]' type='filter' />
+            <card mode='checkdropdown' param='[federated.1323dk3152ujmj114tk130iuqbj7].[none:Wildlife: Species:nk]' type='filter' />
+            <card param='[federated.1323dk3152ujmj114tk130iuqbj7].[tmn:Collision Date and Time:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card pane-specification-id='0' param='[federated.1323dk3152ujmj114tk130iuqbj7].[sum:Cost: Total $:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{0F068211-49EF-409F-83C2-7DC9BE2ED916}' />
+    </window>
+    <window class='worksheet' name='Average Collision cost by specieis'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='dropdown' param='[federated.1323dk3152ujmj114tk130iuqbj7].[none:When: Phase of flight:nk]' type='filter' />
+            <card mode='checkdropdown' param='[federated.1323dk3152ujmj114tk130iuqbj7].[none:Wildlife: Species:nk]' type='filter' />
+            <card mode='dropdown' param='[federated.1323dk3152ujmj114tk130iuqbj7].[none:Effect: Amount of damage (detailed):nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.1323dk3152ujmj114tk130iuqbj7].[avg:Cost: Total $:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{5108159C-3AD2-4F2D-943D-B61B03889EE6}' />
+    </window>
+    <window class='worksheet' name='Economical effect By States'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1323dk3152ujmj114tk130iuqbj7].[tmn:Collision Date and Time:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card pane-specification-id='0' param='[federated.1323dk3152ujmj114tk130iuqbj7].[sum:Cost: Total $:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{DD01C0D6-CBE7-4F2E-9807-B7EFBD9CDCCC}' />
+    </window>
+    <window class='worksheet' name='Total cost of wildlife strike by species'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='dropdown' param='[federated.1323dk3152ujmj114tk130iuqbj7].[none:Origin State:nk]' type='filter' values='cascading' />
+            <card mode='dropdown' param='[federated.1323dk3152ujmj114tk130iuqbj7].[none:When: Phase of flight:nk]' type='filter' />
+            <card param='[federated.1323dk3152ujmj114tk130iuqbj7].[tmn:Collision Date and Time:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card mode='checkdropdown' param='[federated.1323dk3152ujmj114tk130iuqbj7].[none:Wildlife: Species:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.1323dk3152ujmj114tk130iuqbj7].[sum:Cost: Total $:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{832B532A-F088-4FF1-9AEE-8F4A33E9F81B}' />
+    </window>
+    <window class='dashboard' name='Dashboard Wildlife Strike'>
+      <viewpoints>
+        <viewpoint name='Count of Wild life Strike' />
+        <viewpoint name='Number Wildlife Strikes Overtime'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Number of Strike by States'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Species and number of strike' />
+        <viewpoint name='Wildlife Strike by Month'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{020D08B9-4C29-4688-965F-061F60D91630}' />
+    </window>
+    <window class='dashboard' name='Dashboard on Economical Effect'>
+      <viewpoints>
+        <viewpoint name='Average Collision cost by specieis' />
+        <viewpoint name='Cost of Wildlife Strike' />
+        <viewpoint name='Cost of wildlife strike overtime'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Economical Summary' />
+        <viewpoint name='Economical effect By States'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Total cost of wildlife strike by species' />
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{4938CBB2-1E74-44BF-BADC-0A90EAEDB38F}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Story 1'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{19FE17E8-FC5B-4E90-B6B2-3D87E4E10F56}' />
+    </window>
+  </windows>
+</workbook>
